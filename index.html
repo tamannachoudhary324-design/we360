@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Spendesk — Spend that works for you.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="#" aria-label="Spendesk home">
+      <svg width="34" height="24" viewBox="0 0 34 24" fill="none" aria-hidden="true">
+        <path d="M12.5 2 4 10.2l3.9 3.9L12.5 9.5 16.4 13.4l3.9-3.9L12.5 2Z" fill="#6C3DF4"/>
+        <path d="M22.5 10 14 18.2l3.9 3.9 8.5-8.2-3.9-3.9Z" fill="#6C3DF4"/>
+        <path d="M12.5 14.6 8.6 18.5l3.9 3.9 3.9-3.9-3.9-3.9Z" fill="#6C3DF4" opacity=".85"/>
+      </svg>
+      <span class="logo-word">SPENDESK</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#" class="nav-link has-drop">Product <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
+      <a href="#" class="nav-link">Pricing</a>
+      <a href="#" class="nav-link">Customer stories</a>
+      <a href="#" class="nav-link has-drop">Resources <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
+      <a href="#" class="nav-link has-drop">Company <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
+    </nav>
+    <div class="header-actions">
+      <a href="#" class="btn-login">Login</a>
+      <a href="#" class="btn-demo-sm">Book a demo</a>
+      <button class="lang" type="button">EN <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></button>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <svg class="curve curve-left" viewBox="0 0 600 400" fill="none" preserveAspectRatio="none">
+      <path d="M-20 360 C 140 260, 320 220, 600 210" stroke="#C9B8F5" stroke-width="1.6" opacity=".8"/>
+    </svg>
+    <svg class="curve curve-right" viewBox="0 0 600 500" fill="none" preserveAspectRatio="none">
+      <path d="M620 60 C 430 110, 320 200, 360 300 C 390 380, 480 420, 620 470" stroke="#C9B8F5" stroke-width="1.6" opacity=".8"/>
+    </svg>
+  </div>
+
+  <div class="hero-inner">
+    <div class="rating-pill" data-parallax="6">
+      <span class="g2">G<span class="g2-star">★</span></span>
+      <span class="rating-text">4.7/5</span>
+      <span class="stars" aria-label="4.7 out of 5 stars">★★★★★</span>
+    </div>
+
+    <h1>Spend that works <em>for</em> you.</h1>
+    <p class="sub">All your spend in one place, ready to connect. Built, regulated, and profitable in Europe. Loved by 3,000+ finance leaders across the continent.</p>
+
+    <div class="cta-row">
+      <a href="#" class="btn-demo-lg"><span>Book a demo</span><span class="arrow"><svg viewBox="0 0 20 20" width="18" height="18"><path d="M3 10h12M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a href="#" class="take-tour">Take a tour</a>
+    </div>
+  </div>
+
+  <div class="dashboard-stage">
+    <div class="dashboard" data-parallax="0">
+      <div class="dash-head">
+        <h2>Good morning, Sam</h2>
+        <p>Here are a few things to do:</p>
+        <div class="chips">
+          <button class="chip chip-lilac" type="button"><strong>9</strong> invoices to pay this week <span class="chip-arrow">→</span></button>
+          <button class="chip chip-pink" type="button"><strong>18</strong> invoices payments to confirm <span class="chip-arrow">→</span></button>
+          <button class="chip chip-blue" type="button"><strong>16</strong> expenses payments to confirm</button>
+          <button class="chip chip-yellow" type="button"><strong>30</strong> payments to prepare <span class="chip-arrow chip-arrow-olive">→</span></button>
+          <button class="chip chip-green" type="button"><strong>24</strong> payment to prepare <span class="chip-arrow chip-arrow-green">→</span></button>
+        </div>
+      </div>
+      <div class="dash-grid">
+        <div class="dash-panel receipts-panel" data-float="receipts">
+          <div class="receipts-card">
+            <div class="receipts-left">
+              <span class="receipts-label">Missing receipts</span>
+              <span class="receipts-big">£2,340.52</span>
+            </div>
+            <div class="receipts-right">
+              <span class="receipts-label">Total amount without receipt</span>
+              <span class="receipts-amount">£1,036.97</span>
+            </div>
+          </div>
+          <div class="table-head"><span>User</span><span>Amount</span></div>
+          <div class="table-row">
+            <span class="avatar">H</span>
+            <span class="uname">Helena Hill</span>
+            <span class="uamount">£46.98</span>
+          </div>
+        </div>
+        <div class="dash-panel wallet-panel" data-float="wallet">
+          <div class="wallet-top">
+            <div class="wallet-main">
+              <span class="wallet-big">£303,981.70</span>
+              <span class="wallet-sub">Available for new requests</span>
+              <a class="wallet-btn" href="#">View wallet details <span>→</span></a>
+            </div>
+            <div class="wallet-side">
+              <div class="wallet-row">
+                <span class="w-icon"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M2.5 6.5c0-.8.7-1.5 1.5-1.5h3.2l1.4 1.7h6.9c.8 0 1.5.7 1.5 1.5v1.3c0 .8-.7 1.5-1.5 1.5H4c-.8 0-1.5-.7-1.5-1.5V6.5Z" fill="#8b7cf6"/><rect x="2.5" y="10.5" width="15" height="5" rx="1.2" fill="#c9bdfc"/></svg></span>
+                <div><strong>£457,320.20</strong><span>Spendesk wallet</span></div>
+              </div>
+              <div class="wallet-row">
+                <span class="w-icon w-icon-green"><svg viewBox="0 0 20 20" width="20" height="20"><rect x="2.5" y="5" width="15" height="10" rx="2" fill="#cfe0c3"/><rect x="2.5" y="8.5" width="15" height="2.4" fill="#a9c493"/></svg></span>
+                <div><strong>£153,338.50</strong><span>Limits on cards</span></div>
+              </div>
+            </div>
+          </div>
+          <span class="insights">Get more insights</span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="ai-card" data-parallax="14" aria-label="AI Intelligence">
+      <div class="ai-title">
+        <span class="ai-icon"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M6 4 3 8l3 4M10 4l3 4-3 4" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        AI Intelligence
+      </div>
+      <p>Marvin is chasing down receipts for 3 people in the org.</p>
+    </aside>
+
+    <aside class="export-card" data-parallax="12" aria-label="Batch ready for export">
+      <span class="folder"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M2.5 6.5c0-.8.7-1.5 1.5-1.5h3.2l1.4 1.7h6.9c.8 0 1.5.7 1.5 1.5v5.3c0 .8-.7 1.5-1.5 1.5H4c-.8 0-1.5-.7-1.5-1.5V6.5Z" fill="#7B61FF"/><rect x="2.5" y="9" width="15" height="6" rx="1.2" fill="#A794FF"/></svg></span>
+      <h3>Batch ready for export</h3>
+      <p>25 items for batch export.</p>
+      <a href="#" class="btn-export">Export to ERP</a>
+    </aside>
+  </div>
+</main>
+
+<!-- SECTION 2 -->
+<section class="trust reveal">
+  <p class="trust-kicker">BUILT WITH INSIGHTS FROM 12,000+ FINANCE LEADERS IN THE CFO CONNECT COMMUNITY</p>
+  <div class="logo-marquee" aria-label="Customer logos">
+    <div class="logo-track">
+      <span class="brand small">◧ DASHLANE</span><span class="brand">® remote</span><span class="brand">•ᴗ• alan</span><span class="brand">Uber</span><span class="brand small light">⊕ TravelPerk</span><span class="brand small">Ⓟ PayFit</span><span class="brand xl">deel.</span><span class="brand">⛰ carta</span><span class="brand small">Gainsight</span>
+      <span class="brand small">◧ DASHLANE</span><span class="brand">® remote</span><span class="brand">•ᴗ• alan</span><span class="brand">Uber</span><span class="brand small light">⊕ TravelPerk</span><span class="brand small">Ⓟ PayFit</span><span class="brand xl">deel.</span><span class="brand">⛰ carta</span><span class="brand small">Gainsight</span>
+    </div>
+  </div>
+</section>
+
+<section class="platform reveal">
+  <h2>One platform. Every spend type.</h2>
+  <p class="lede">From purchase to payment to reconciliation, manage all company spending in one connected system.</p>
+</section>
+
+<!-- SECTION 3 -->
+<section class="features">
+  <div class="focus-group" data-focus>
+    <div class="feat-row top">
+      <article class="fcard lav reveal">
+        <h3>Smart corporate cards</h3>
+        <p>Full flexibility for them, full control for you</p>
+        <div class="pcard-visual mock"><span class="pbrand">SPENDESK</span><span class="chipicon"></span></div>
+      </article>
+      <article class="fcard peach reveal">
+        <h3>Expenses, minus the chase</h3>
+        <p>98% of receipts, not a single chaser email</p>
+        <div class="expense-mock mock">
+          <div class="row1"><span class="hub">H</span><div><b>Hubspot</b><div class="inv">Invoice #831</div></div></div>
+          <label>Amount</label><div class="amt">£831.00</div>
+        </div>
+      </article>
+    </div>
+    <div class="feat-row mid">
+      <article class="fcard sky reveal">
+        <h3 style="font-size:25px">Accounts Payable at speed</h3>
+        <p>Turn invoice chaos into invoice control</p>
+        <div class="invoice-stack mock">
+          <div class="mini-inv"><b>Invoice #8821</b><span>£1,299</span><br><br><b>Invoice #9689</b><span>£8,219</span></div>
+          <div class="paybox"><b>Proceed 21 invoices</b><a class="btn-pay" href="#">Pay with Spendesk</a></div>
+        </div>
+      </article>
+      <article class="fcard cream reveal">
+        <h3 style="font-size:25px">Procure-to-pay with all the dots connected</h3>
+        <p>Teams love the speed, while finance stays within budget</p>
+        <div class="approval mock"><b>Budget approval</b><br><br>○ Status <span class="ok" style="float:right">Approved</span><br><br>⛉ Assignee <b style="float:right">Requester</b><br><br>◫ Done on <b style="float:right">Dec 12</b></div>
+      </article>
+      <article class="fcard mint reveal">
+        <h3 style="font-size:25px">Spend control, without the friction</h3>
+        <p>Automatically protect budgets without slowing teams down</p>
+        <div class="budget mock"><b>Marketing budget</b><b style="float:right">58%</b><div class="bar"><i class="u"></i><i class="c"></i></div><span>● Used £82,000 &nbsp; ● Committed £25,000 &nbsp; ● Available £80,000</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3.1 -->
+<section class="features">
+  <div class="focus-group" data-focus>
+    <div class="feat-row duo">
+      <article class="fcard lilac reveal" style="text-align:left">
+        <h3 style="font-size:27px">Intelligence &amp; automation you control</h3>
+        <p>Give your team time back so they can do the work that matters</p>
+        <div class="auto mock"><b>⚡ When &nbsp;&nbsp;——&nbsp;&nbsp; ▶ Do</b></div>
+      </article>
+      <article class="fcard ice reveal" style="text-align:left">
+        <h3 style="font-size:27px">Integrations built for the way finance works now</h3>
+        <p>Connect your accounting, ERP, business tools and AI assistant to keep your data following</p>
+        <div class="tiles" data-tiles>
+          <span class="tile"></span><span class="tile"></span><span class="tile"></span><span class="tile" style="color:#c0392b">⁙</span><span class="tile"></span>
+          <span class="tile"></span><span class="tile"></span><span class="tile" style="color:#c0392b">L7</span><span class="tile"></span><span class="tile"></span>
+          <span class="tile"></span><span class="tile" style="font-size:28px">⁂</span><span class="tile">✺</span><span class="tile" style="color:#5cb85c">Sage</span><span class="tile" style="color:#5cb85c">b</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 : Spendesk AI Connect -->
+<section class="aiconnect reveal" id="section5" aria-label="Spendesk AI Connect">
+  <div class="aiconnect-inner">
+    <div class="ai-visual" aria-hidden="true">
+      <div class="ai-screen">
+        <p class="ai-greet"><span class="ai-spark">✳</span>Hey there, Lisa</p>
+        <div class="ai-prompt">
+          <p class="ai-query">List unpaid invoices over &euro;5,000.</p>
+          <div class="ai-bar">
+            <span class="ai-plus">+</span>
+            <span class="ai-model">Sonnet 4.6&nbsp;&nbsp;Low&nbsp;&nbsp;&#8964;</span>
+            <span class="ai-mic"><svg viewBox="0 0 16 16" width="15" height="15"><rect x="6" y="1.5" width="4" height="7" rx="2" stroke="currentColor" stroke-width="1.4" fill="none"/><path d="M3.5 7.5a4.5 4.5 0 0 0 9 0M8 12v2.5" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg></span>
+            <span class="ai-send"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M8 13V3M4.5 6.5 8 3l3.5 3.5" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ai-copy">
+      <span class="ai-pill">NEW: SPENDESK AI CONNECT</span>
+      <h2>Meet the fastest way to work with your spend data</h2>
+      <p>Spendesk gives finance teams a complete, accurate view of company spend. Spendesk AI Connect makes that data instantly usable.</p>
+      <p>Ask questions, find details, build reports, and automate your workflow through your AI assistant of choice.</p>
+      <p>All with trusted Spendesk data and read-only access that keeps finance workflows protected.</p>
+      <a class="ai-btn" href="#">Find out more <span class="ai-arr"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 : customer stories carousel -->
+<section class="stories reveal" id="section4" aria-label="Customer stories">
+  <h2>Trusted by finance teams who move<br>fast and <em>don&rsquo;t</em> break things</h2>
+  <div class="s-viewport" data-viewport>
+    <div class="s-track" data-track>
+      <article class="s-slide" data-slide>
+        <div class="s-outer">
+          <div class="s-left">
+            <span class="s-logo s-logo-dark" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M5 7.5h13.5v11" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 7.5 16.5 19" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+            <h3>100% adoption,<br>in under 30 days</h3>
+            <a class="s-btn" href="#">Read the full story <span class="s-arr"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          </div>
+          <div class="s-right">
+            <q>I can&rsquo;t imagine how our business would operate without Spendesk. We couldn&rsquo;t ask for a better spend management system.</q>
+            <div class="s-who">
+              <img class="s-ava" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Portrait of Julie Rodrigues" loading="lazy">
+              <div><b>Julie Rodrigues</b><span>Finance director</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="s-slide" data-slide>
+        <div class="s-outer">
+          <div class="s-left">
+            <span class="s-logo s-logo-niji" aria-hidden="true">niji</span>
+            <h3>12x transaction<br>volume</h3>
+            <a class="s-btn" href="#">Read the full story <span class="s-arr"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          </div>
+          <div class="s-right">
+            <q>&ldquo;Spendesk gives us the agility we need to manage spend and accounting at scale. Today I couldn&rsquo;t imagine working without it.&rdquo;</q>
+            <div class="s-who">
+              <img class="s-ava" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Portrait of Isabelle Decomble" loading="lazy">
+              <div><b>Isabelle Decomble</b><span>Finance manager</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="s-slide" data-slide>
+        <div class="s-outer">
+          <div class="s-left">
+            <span class="s-logo s-logo-front" aria-hidden="true">FRONT<br>ROW</span>
+            <h3>Seamless<br>integrations</h3>
+            <a class="s-btn" href="#">Read the full story <span class="s-arr"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          </div>
+          <div class="s-right">
+            <q>&ldquo;The friction-free NetSuite integration was one of the deciding factors for us.&rdquo;</q>
+            <div class="s-who">
+              <img class="s-ava" src="https://randomuser.me/api/portraits/women/50.jpg" alt="Portrait of Nicoletta Hinrichs" loading="lazy">
+              <div><b>Nicoletta Hinrichs</b><span>Senior Finance Manager</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="s-slide" data-slide>
+        <div class="s-outer">
+          <div class="s-left">
+            <span class="s-logo s-logo-ever" aria-hidden="true">evernex</span>
+            <h3>+3 days per<br>month gained</h3>
+            <a class="s-btn" href="#">Read the full story <span class="s-arr"><svg viewBox="0 0 16 16" width="16" height="16"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          </div>
+          <div class="s-right">
+            <q>&ldquo;We gains 3 days per month with automated reconciliation. The close is calm now.&rdquo;</q>
+            <div class="s-who">
+              <img class="s-ava" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Portrait of Thomas Lau" loading="lazy">
+              <div><b>Thomas Lau</b><span>Comptable &amp; Financier</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="s-dots" data-dots role="tablist" aria-label="Choose story"></div>
+</section>
+
+<!-- SECTION 6 : 90-day journey timeline -->
+<section class="journey reveal" id="section6" aria-label="What you can do with Spendesk in 90 days">
+  <div class="journey-inner">
+    <div class="journey-head">
+      <h2>What you can do with Spendesk in 90 days</h2>
+      <p>Real-time control on spend, secure payment methods, clever automations, and more &mdash; making accounting a breeze.</p>
+    </div>
+    <div class="journey-graph" data-journey>
+      <div class="j-stage-inner">
+        <svg class="j-svg" viewBox="0 0 1200 760" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <defs>
+            <linearGradient id="jFill" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#d7e0ff" stop-opacity=".55"/>
+              <stop offset=".55" stop-color="#c6d4ff" stop-opacity=".85"/>
+              <stop offset="1" stop-color="#e9efff" stop-opacity=".45"/>
+            </linearGradient>
+            <linearGradient id="jLink" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#8b7cf6" stop-opacity="0"/>
+              <stop offset="1" stop-color="#8b7cf6" stop-opacity=".8"/>
+            </linearGradient>
+          </defs>
+          <path class="j-fill" d="M-20,480 C70,445 130,418 210,428 C290,438 320,490 390,540 C440,577 500,588 560,578 C640,564 670,530 730,480 C790,430 830,398 900,388 C970,378 1030,394 1100,442 C1150,478 1190,488 1220,490 L1220,760 L-20,760 Z" fill="url(#jFill)"/>
+          <path class="j-base" d="M-20,480 C70,445 130,418 210,428 C290,438 320,490 390,540 C440,577 500,588 560,578 C640,564 670,530 730,480 C790,430 830,398 900,388 C970,378 1030,394 1100,442 C1150,478 1190,488 1220,490" fill="none" stroke="#bcc7f2" stroke-width="2"/>
+          <path class="j-draw" pathLength="100" d="M-20,480 C70,445 130,418 210,428 C290,438 320,490 390,540 C440,577 500,588 560,578 C640,564 670,530 730,480 C790,430 830,398 900,388 C970,378 1030,394 1100,442 C1150,478 1190,488 1220,490" fill="none" stroke="#7f7bf0" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <div class="j-node j-n1">
+          <span class="j-dot"></span>
+          <span class="j-link j-down" style="height:64px"></span>
+          <div class="j-card j-below">
+            <span class="j-pill">Week 1&ndash;2</span>
+            <p>Onboarding complete. AI begins reading documents and building your secure workspace.</p>
+          </div>
+        </div>
+        <div class="j-node j-n2">
+          <span class="j-dot"></span>
+          <span class="j-link j-up" style="height:230px"></span>
+          <div class="j-card j-above-center">
+            <span class="j-pill">Week 3&ndash;4</span>
+            <p>Bookkeeping suggestions begin appearing as confidence builds. Approval workflows configured and live.</p>
+          </div>
+        </div>
+        <div class="j-node j-n3">
+          <span class="j-dot"></span>
+          <span class="j-link j-down" style="height:70px"></span>
+          <div class="j-card j-below">
+            <span class="j-pill">Month 2</span>
+            <p>Duplicate detection and anomaly flagging fully active. Team in review mode.</p>
+          </div>
+        </div>
+        <div class="j-node j-n4">
+          <span class="j-dot"></span>
+          <span class="j-link j-up" style="height:200px"></span>
+          <div class="j-card j-above-right">
+            <span class="j-pill">Month 3</span>
+            <p>Month-end close faster than before. Data exported, books closed. Your team has time back.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7 : why Spendesk accordion -->
+<section class="why reveal" id="section7" aria-label="Why Spendesk">
+  <div class="why-inner">
+    <div class="why-left" data-acc-group>
+      <div class="acc-item on" data-acc="0">
+        <button class="acc-head" aria-expanded="true"><span class="acc-title">&pound;10+ billion in processed spend. Trusted across Europe.</span></button>
+        <div class="acc-body"><div class="acc-clip"><p>From high-growth scale-ups to established mid-market businesses, finance teams across 35+ countries rely on Spendesk to manage every payment, every invoice, every expense claim. We&rsquo;re ISO 27001:2022 certified, GDPR and PCI-DSS compliant, and in 2025 we became the first spend management platform to reach profitability. Real-time visibility, complete control, and a business you can build on for the long term.</p></div></div>
+      </div>
+      <div class="acc-item" data-acc="1">
+        <button class="acc-head" aria-expanded="false"><span class="acc-title">All your spend dots connected</span></button>
+        <div class="acc-body"><div class="acc-clip"><p>Spendesk connects every type of company spend into one platform. Cards, expenses, AP, procurement, budgets. All in one place, with all the context you need. No more chasing data across disconnected tools or reconciling systems that don&rsquo;t talk to each other. Just complete, real-time visibility across every pound spent.</p></div></div>
+      </div>
+      <div class="acc-item" data-acc="2">
+        <button class="acc-head" aria-expanded="false"><span class="acc-title">Finance transformed into a force for growth</span></button>
+        <div class="acc-body"><div class="acc-clip"><p>When spend is visible, controlled, and automated, finance stops being a bottleneck and starts being a driver. Spendesk gives you the tools to scale sustainably by automating the manual work, surface insights that matter, and giving teams the autonomy they need &ndash; with you always in control.</p></div></div>
+      </div>
+      <div class="acc-item" data-acc="3">
+        <button class="acc-head" aria-expanded="false"><span class="acc-title">We support you every step of the way</span></button>
+        <div class="acc-body"><div class="acc-clip"><p>You&rsquo;re not just buying software. You&rsquo;re getting a partner. Spendesk customers get hands-on implementation support, expert guidance, and dedicated customer success teams who know finance operations inside out. We help you launch in weeks, not months, and we&rsquo;re there for you when complexity hits.</p></div></div>
+      </div>
+      <div class="acc-item" data-acc="4">
+        <button class="acc-head" aria-expanded="false"><span class="acc-title">Backed by Europe&rsquo;s largest CFO community</span></button>
+        <div class="acc-body"><div class="acc-clip"><p>When you choose Spendesk, you&rsquo;re joining more than a platform. Access CFO Connect Pro, Europe&rsquo;s largest finance community, to tap into collective expertise and share insights with peers facing the same challenges. Great tech is a foundation; the right network gives you the perspective you need to build upon it.</p></div></div>
+      </div>
+    </div>
+    <div class="why-stick">
+    <div class="why-visual" aria-hidden="true" data-panes>
+      <div class="why-pane on" data-pane="0">
+        <svg class="hub-lines" viewBox="0 0 720 480" preserveAspectRatio="none"><g stroke="#c9b8f0" stroke-width="1.5" opacity=".7"><path d="M360 240 200 110M360 240 290 100M360 240 480 95M360 240 585 120M360 240 620 210M360 240 600 300M360 240 470 395M360 240 180 360M360 240 130 205"/></g></svg>
+        <span class="hub-center"><svg viewBox="0 0 32 24" width="44" height="32"><path d="M13 3 5 11.5 9.5 16 13 12.5 16.5 16 21 11.5 13 3Z" fill="#1b1b22"/><path d="M22 11 14.5 18.5 19 23 27 15 22 11Z" fill="#1b1b22"/></svg></span>
+        <span class="hub-tile" style="left:22%;top:12%">VERIFACTU</span>
+        <span class="hub-tile" style="left:33%;top:8%">High Performer</span>
+        <span class="hub-tile" style="left:63%;top:11%">UK</span>
+        <span class="hub-tile hub-datev" style="left:12%;top:36%">DATEV</span>
+        <span class="hub-tile hub-xero" style="left:80%;top:40%">xero</span>
+        <span class="hub-tile" style="left:82%;top:55%">◐</span>
+        <span class="hub-tile" style="left:8%;top:66%">EU</span>
+        <span class="hub-tile" style="left:28%;top:76%">GDPR</span>
+        <span class="hub-tile hub-iso" style="left:58%;top:76%">ISO 27001</span>
+      </div>
+      <div class="why-pane" data-pane="1">
+        <div class="conn-card">
+          <div class="conn-top"><span class="conn-mark">◆</span> Connection</div>
+          <div class="conn-logo">SPENDESK</div>
+          <svg class="conn-lines" viewBox="0 0 560 150" preserveAspectRatio="none"><g stroke="#b9aef2" stroke-width="2" fill="none"><path d="M280 0v30c0 14-12 20-30 20H150c-20 0-30 12-30 30v20M280 0v30c0 14 12 20 30 20h100c20 0 30 12 30 30v20M280 10v40M280 10v40M200 50c-8 0-14 6-14 14v36M360 50c8 0 14 6 14 14v36"/></g></svg>
+          <div class="conn-tiles"><span class="conn-tile">▭</span><span class="conn-tile">▤</span><span class="conn-tile">▦</span><span class="conn-tile">◫</span></div>
+        </div>
+      </div>
+      <div class="why-pane why-mint" data-pane="2">
+        <div class="inv-list">
+          <div class="inv-row"><span class="inv-ava">S</span><div><b>Slack</b><span>INV-8471</span></div><em class="pill-due">Due this week</em></div>
+          <div class="inv-row"><span class="inv-ava">A</span><div><b>Apple</b><span>INV-6632</span></div><em class="pill-due">Due this week</em></div>
+          <div class="inv-row"><span class="inv-ava">D</span><div><b>Dropbox</b><span>INV-1221</span></div><em class="pill-over">Overdue</em></div>
+        </div>
+        <div class="inv-detail">
+          <div class="inv-detail-top">Transformation</div>
+          <b class="inv-detail-title">Spendesk Invoice</b>
+          <label>Supplier name</label><span class="inv-field">Software purchase</span>
+          <label>Amount</label><span class="inv-field">0.00 &nbsp; &pound;</span>
+        </div>
+      </div>
+      <div class="why-pane why-cream" data-pane="3">
+        <div class="wk wk-side"><b>Week 1</b><i></i><i></i><i class="short"></i></div>
+        <div class="wk wk-main">
+          <div class="wk-top">Experience</div>
+          <span class="wk-badge">2</span>
+          <b class="wk-title">Week 2</b>
+          <div class="wk-row"><span>○ Status</span><b class="ok">Approved</b></div>
+          <div class="wk-row"><span>⛉ Assignee</span><b>Requester</b></div>
+          <div class="wk-row"><span>◫ Done on</span><b>Dec 12</b></div>
+        </div>
+        <div class="wk wk-side"><b>Week 3</b><i></i><i></i><i class="short"></i></div>
+      </div>
+      <div class="why-pane" data-pane="4">
+        <div class="cfo-banner">CFO.connect</div>
+        <div class="cfo-card">
+          <b>CFO Community</b>
+          <div class="cfo-tiles">
+            <div class="cfo-tile"><span class="cfo-ico">▣</span><b>Events</b><i></i><i class="short"></i></div>
+            <div class="cfo-tile"><span class="cfo-ico">▣</span><b>Communities</b><i></i><i class="short"></i></div>
+            <div class="cfo-tile"><span class="cfo-ico">▣</span><b>Resources</b><i></i><i class="short"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8 : community mosaic -->
+<section class="crowd reveal" id="section8" aria-label="Finance leaders community">
+  <div class="crowd-rail" aria-hidden="true">
+    <img class="crowd-photo" src="https://randomuser.me/api/portraits/men/22.jpg" alt="" loading="lazy">
+    <img class="crowd-photo" src="https://randomuser.me/api/portraits/women/21.jpg" alt="" loading="lazy">
+    <img class="crowd-photo" src="https://randomuser.me/api/portraits/men/45.jpg" alt="" loading="lazy">
+    <img class="crowd-photo" src="https://randomuser.me/api/portraits/women/33.jpg" alt="" loading="lazy">
+  </div>
+  <div class="crowd-center">
+    <span class="crowd-kicker">EUROPE&rsquo;S LEADING FINANCE COMMUNITY</span>
+    <h2>Powered by 10,000+ finance leaders</h2>
+    <p>Spendesk isn&rsquo;t just a platform. We&rsquo;ve created a thriving community of finance leaders across Europe sharing insights, sharing how they&rsquo;re leveraging AI, and shaping the future of finance. Join events, access exclusive content, perks and connect with peers. Great software matters. So does the network around it.</p>
+    <a class="crowd-btn" href="#">Connect with our Community</a>
+  </div>
+  <div class="crowd-rail" aria-hidden="true">
+    <img class="crowd-photo" src="https://randomuser.me/api/portraits/women/79.jpg" alt="" loading="lazy">
+    <img class="crowd-photo" src="https://randomuser.me/api/portraits/men/52.jpg" alt="" loading="lazy">
+    <img class="crowd-photo" src="https://randomuser.me/api/portraits/women/12.jpg" alt="" loading="lazy">
+    <img class="crowd-photo" src="https://randomuser.me/api/portraits/men/77.jpg" alt="" loading="lazy">
+  </div>
+</section>
+
+<!-- SECTION 9 : FAQ -->
+<section class="faq reveal" id="section9" aria-label="Frequently asked questions">
+  <div class="faq-inner">
+    <div class="faq-left">
+      <h2>Want to know more?</h2>
+      <p>It can be hard to choose new tools for your business.<br>We&rsquo;re here to help you make the right decision.</p>
+      <a class="faq-btn" href="#">Get more answers</a>
+    </div>
+    <div class="faq-list" data-faq>
+      <div class="faq-item" data-faq-item>
+        <button class="faq-q" aria-expanded="false"><span>What is Spendesk?</span><svg viewBox="0 0 12 8" width="14" height="10"><path d="M1 1.5 6 6.5 11 1.5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><div class="faq-clip"><p>Spendesk is a spend management platform for finance teams. It connects every type of company spend, from corporate cards and expenses to accounts payable, procurement, and budgets, into one system. Finance teams use Spendesk to get complete visibility, automate workflows, and close faster.</p></div></div>
+      </div>
+      <div class="faq-item" data-faq-item>
+        <button class="faq-q" aria-expanded="false"><span>Is Spendesk right for our business size?</span><svg viewBox="0 0 12 8" width="14" height="10"><path d="M1 1.5 6 6.5 11 1.5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><div class="faq-clip"><p>Spendesk is ideal for companies from 50 employees to 250, but we do support businesses under or above these numbers. Whether you&rsquo;re scaling fast, managing multiple entities, or dealing with complex spend operations, the platform grows with you. If you&rsquo;ve outgrown basic tools but want to avoid enterprise complexity, Spendesk is built for that space.</p></div></div>
+      </div>
+      <div class="faq-item" data-faq-item>
+        <button class="faq-q" aria-expanded="false"><span>How long does implementation take?</span><svg viewBox="0 0 12 8" width="14" height="10"><path d="M1 1.5 6 6.5 11 1.5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><div class="faq-clip"><p>Most customers are fully live within 3-4 weeks, including data migration, policy setup, and team onboarding. We provide hands-on implementation support to help you launch fast without disrupting day-to-day operations.</p></div></div>
+      </div>
+      <div class="faq-item" data-faq-item>
+        <button class="faq-q" aria-expanded="false"><span>Does Spendesk replace our existing tools?</span><svg viewBox="0 0 12 8" width="14" height="10"><path d="M1 1.5 6 6.5 11 1.5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><div class="faq-clip"><p>For most customers, yes. Spendesk typically replaces multiple point solutions (corporate cards, expense management, AP software, procurement tools) with one connected platform. You&rsquo;ll get broader functionality, better visibility, and simpler operations without managing multiple vendors.</p></div></div>
+      </div>
+      <div class="faq-item" data-faq-item>
+        <button class="faq-q" aria-expanded="false"><span>What systems does Spendesk integrate with?</span><svg viewBox="0 0 12 8" width="14" height="10"><path d="M1 1.5 6 6.5 11 1.5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><div class="faq-clip"><p>Spendesk integrates with leading accounting and ERP systems including Sage, Xero, Netsuite, SAP, Datev, and others. Transactions flow automatically into your ledger, eliminating manual data entry and reconciliation. We also connect with HR systems, Slack, and other business tools.</p></div></div>
+      </div>
+      <div class="faq-item" data-faq-item>
+        <button class="faq-q" aria-expanded="false"><span>What kind of support do customers get?</span><svg viewBox="0 0 12 8" width="14" height="10"><path d="M1 1.5 6 6.5 11 1.5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><div class="faq-clip"><p>Every Spendesk customer gets dedicated implementation support, ongoing customer success partnership, and access to expert support teams who understand finance operations. We&rsquo;re here to help you launch successfully and get continuous value as you scale.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 10 : final CTA + footer -->
+<section class="final reveal" id="section10" aria-label="Get started with Spendesk">
+  <svg class="final-line" data-curveline viewBox="0 0 1728 220" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-20,55 C300,140 600,212 900,196 C1200,180 1450,142 1750,124" fill="none" stroke="#cfc3f5" stroke-width="3"/>
+  </svg>
+  <div class="final-band">
+    <div class="final-inner">
+      <div class="final-copy">
+        <h2>Spend that <em>finally</em> works for you.</h2>
+        <div class="cta-row" style="justify-content:flex-start;margin-top:30px">
+          <a href="#" class="btn-demo-lg"><span>Book a demo</span><span class="arrow"><svg viewBox="0 0 20 20" width="18" height="18"><path d="M3 10h12M11 5.5 15.5 10 11 14.5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          <a href="#" class="take-tour">Take a tour</a>
+        </div>
+      </div>
+      <div class="final-cards" aria-hidden="true">
+        <div class="spend-card spend-back"><span class="sc-brand">SPENDESK</span><span class="sc-visa">VISA<small>Business Debit</small></span></div>
+        <div class="spend-card spend-front"><span class="sc-brand">SPENDESK</span><span class="sc-chip"></span><span class="sc-visa">VISA<small>Business Debit</small></span></div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-word" style="color:#1b1b22">SPENDESK</span>
+        <p>Empower your team with the complete spend management solution</p>
+        <div class="store-row">
+          <a class="store-badge" href="#">Download on the<br><b>App Store</b></a>
+          <a class="store-badge" href="#">GET IT ON<br><b>Google Play</b></a>
+        </div>
+        <span class="visa-word">VISA</span>
+        <div class="social-row"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">✕</a><a href="#" aria-label="YouTube">▶</a></div>
+      </div>
+      <nav class="footer-cols" aria-label="Footer">
+        <div><b>Solutions</b><a href="#">Invoice Processing</a><a href="#">Administrative Expenses</a><a href="#">Subscription Management</a><a href="#">Business Travel</a><a href="#">Office Expenses</a><a href="#">Digital Advertising</a><a href="#">Expense Management</a><a href="#">Business Cards</a><a href="#">Accounts Payable</a></div>
+        <div><b>Platform</b><a href="#">Overview</a><a href="#">Procure-to-Pay</a><a href="#">Multi-Entity Management</a><a href="#">Corporate Cards</a><a href="#">Virtual Cards</a><a href="#">API &amp; Integrations</a><a href="#">Pricing</a><a href="#">Security</a><a href="#">Trust Center</a></div>
+        <div><b>Resources</b><a href="#">Customer stories</a><a href="#">Blog</a><a href="#">Webinars</a><a href="#">Finance Team Resources</a><a href="#">CFO Tech Stack Map</a><a href="#">HMRC Mileage Calculator</a><a href="#">CFO Connect</a><a href="#">FAQs</a><a href="#">Glossary</a><a href="#">Help Center</a></div>
+        <div><b>Company</b><a href="#">About us</a><a href="#">Partners</a><a href="#">Careers</a><a href="#">News &amp; Press</a><a href="#">Contact Us</a></div>
+      </nav>
+    </div>
+  </footer>
+</section>
+
+<script>
+// Cursor-driven motion: floating cards glide up/down as the cursor moves
+// vertically, with a slight horizontal drift. Respects reduced motion.
+(function () {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+
+  const floaters = Array.from(document.querySelectorAll('[data-parallax]'));
+  const innerPanels = Array.from(document.querySelectorAll('[data-float]'));
+  const stage = document.querySelector('.dashboard-stage');
+  const dashCard = document.querySelector('.dashboard');
+  let tx = 0, ty = 0, cx = 0, cy = 0, raf = 0;
+
+  // Scroll-linked motion for the "Good morning, Sam" card.
+  // Scroll down -> card glides up; scroll up -> card eases slightly down.
+  // Clamped so the card never leaves the section frame.
+  const SCROLL_MIN = -32, SCROLL_MAX = 24;
+  let scrollTarget = 0, scrollCurrent = 0, lastScrollY = window.scrollY;
+
+  // Per-card vertical emphasis: outer cards travel most, inner panels least.
+  const Y_BOOST = { 'ai': 1.9, 'export': 1.6, 'default': 1.4 };
+
+  function depthOf(el) {
+    return parseFloat(el.dataset.parallax || '10');
+  }
+  function yBoost(el) {
+    if (el.classList.contains('ai-card')) return Y_BOOST.ai;
+    if (el.classList.contains('export-card')) return Y_BOOST.export;
+    return Y_BOOST.default;
+  }
+
+  function tick() {
+    cx += (tx - cx) * 0.07;
+    cy += (ty - cy) * 0.07;
+
+    floaters.forEach((el) => {
+      const d = depthOf(el);
+      const x = (cx * d * 0.6).toFixed(2);
+      const y = (cy * d * yBoost(el)).toFixed(2);
+      el.style.translate = `${x}px ${y}px`;
+    });
+
+    // Inner dashboard panels counter-drift gently on the vertical axis.
+    innerPanels.forEach((el, i) => {
+      const dir = el.dataset.float === 'wallet' ? 1 : -1;
+      const y = (cy * (6 + i * 3) * dir).toFixed(2);
+      el.style.translate = `0px ${y}px`;
+    });
+
+    if (stage) {
+      stage.style.setProperty('--cursor-y', cy.toFixed(3));
+    }
+
+    // Ease the dashboard card toward its scroll target (clamped in frame).
+    scrollCurrent += (scrollTarget - scrollCurrent) * 0.09;
+    if (dashCard) {
+      dashCard.style.translate = `0px ${scrollCurrent.toFixed(2)}px`;
+    }
+
+    const cursorSettled = Math.abs(tx - cx) <= 0.0005 && Math.abs(ty - cy) <= 0.0005;
+    const scrollSettled = Math.abs(scrollTarget - scrollCurrent) <= 0.05;
+    if (!cursorSettled || !scrollSettled) {
+      raf = requestAnimationFrame(tick);
+    } else { raf = 0; }
+  }
+
+  function kick() {
+    if (!raf) raf = requestAnimationFrame(tick);
+  }
+
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    const delta = y - lastScrollY;
+    lastScrollY = y;
+    // Scrolling down (delta > 0) pushes the card up; scrolling up eases it down.
+    scrollTarget = Math.min(SCROLL_MAX, Math.max(SCROLL_MIN, scrollTarget - delta * 0.35));
+    kick();
+  }, { passive: true });
+
+  function onMove(clientX, clientY) {
+    tx = (clientX / window.innerWidth - 0.5) * 2;
+    ty = (clientY / window.innerHeight - 0.5) * 2;
+    if (!raf) raf = requestAnimationFrame(tick);
+  }
+
+  window.addEventListener('mousemove', (e) => onMove(e.clientX, e.clientY), { passive: true });
+  // Touch devices: cursor up/down equivalent via scroll + touch drag.
+  window.addEventListener('touchmove', (e) => {
+    if (e.touches.length) onMove(e.touches[0].clientX, e.touches[0].clientY);
+  }, { passive: true });
+})();
+</script>
+<script>
+// Sections 2/3/3.1/3.2 interactions
+(function () {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Sharp-focus / blur across feature cards
+  document.querySelectorAll('[data-focus]').forEach((group) => {
+    const cards = Array.from(group.querySelectorAll('.fcard'));
+    cards.forEach((card) => {
+      card.addEventListener('mouseenter', () => {
+        group.classList.add('is-focus');
+        cards.forEach((c) => c.classList.toggle('active', c === card));
+      });
+      card.addEventListener('mouseleave', () => {
+        group.classList.remove('is-focus');
+        card.classList.remove('active');
+      });
+    });
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+  // Fixed header: pin to viewport, offset page flow, shadow on scroll
+  const header = document.querySelector('.site-header');
+  if (header) {
+    const fit = () => { document.body.style.paddingTop = header.offsetHeight + 'px'; };
+    const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', fit);
+    fit();
+    onScroll();
+  }
+
+  // Subtle parallax on integration tiles
+  if (!reduce) {
+    const tiles = document.querySelector('[data-tiles]');
+    if (tiles) {
+      window.addEventListener('mousemove', (e) => {
+        const x = (e.clientX / window.innerWidth - 0.5) * 10;
+        const y = (e.clientY / window.innerHeight - 0.5) * 10;
+        tiles.style.translate = `${x.toFixed(1)}px ${y.toFixed(1)}px`;
+      }, { passive: true });
+    }
+  }
+
+  // Sections 9-10 — continuing curve drifts lightly with the cursor.
+  (function curveLines() {
+    const lines = Array.from(document.querySelectorAll('[data-curveline]'));
+    if (!lines.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let tx = 0, cx = 0, raf = 0;
+    function tick() {
+      cx += (tx - cx) * 0.06;
+      lines.forEach((line) => { line.style.translate = cx.toFixed(2) + 'px 0px'; });
+      if (Math.abs(tx - cx) > 0.05) raf = requestAnimationFrame(tick);
+      else raf = 0;
+    }
+    window.addEventListener('mousemove', (e) => {
+      tx = (e.clientX / window.innerWidth - 0.5) * 26;
+      if (!raf) raf = requestAnimationFrame(tick);
+    }, { passive: true });
+  })();
+
+  // Section 9 — FAQ accordion: single-open, chevron rotates.
+  (function faqAccordion() {
+    const items = Array.from(document.querySelectorAll('[data-faq-item]'));
+    if (!items.length) return;
+    items.forEach((item) => {
+      item.querySelector('.faq-q').addEventListener('click', () => {
+        const wasOn = item.classList.contains('on');
+        items.forEach((it) => {
+          const on = it === item && !wasOn;
+          it.classList.toggle('on', on);
+          it.querySelector('.faq-q').setAttribute('aria-expanded', on ? 'true' : 'false');
+        });
+      });
+    });
+  })();
+
+  // Section 7 — accordion: one active item; right visual swaps in place.
+  (function whyAccordion() {
+    const items = Array.from(document.querySelectorAll('[data-acc]'));
+    const panes = Array.from(document.querySelectorAll('[data-pane]'));
+    if (!items.length) return;
+    items.forEach((item) => {
+      item.querySelector('.acc-head').addEventListener('click', () => {
+        if (item.classList.contains('on')) return;
+        const idx = item.dataset.acc;
+        items.forEach((it) => {
+          const on = it === item;
+          it.classList.toggle('on', on);
+          it.querySelector('.acc-head').setAttribute('aria-expanded', on ? 'true' : 'false');
+        });
+        panes.forEach((p) => p.classList.toggle('on', p.dataset.pane === idx));
+      });
+    });
+  })();
+
+  // Section 6 — journey timeline: cursor entering the graph draws the
+  // curve left-to-right; nodes, connectors and detail cards activate in
+  // sequence. Plays once to completion; never resets mid-flight.
+  (function journey() {
+    const g = document.querySelector('[data-journey]');
+    if (!g) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      g.classList.add('is-play');
+      return;
+    }
+    let played = false;
+    g.addEventListener('pointerenter', () => {
+      if (played) return;
+      played = true;
+      g.classList.add('is-play');
+    }, { passive: true });
+  })();
+
+  // Section 4 — cursor-driven story carousel (one continuous section).
+  // Drag horizontally (or move cursor while hovering) to glide between
+  // stories with premium easing + subtle parallax. Snaps on release.
+  (function section4() {
+    const viewport = document.querySelector('[data-viewport]');
+    const track = document.querySelector('[data-track]');
+    const dotsBox = document.querySelector('[data-dots]');
+    if (!viewport || !track) return;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const slides = Array.from(track.querySelectorAll('[data-slide]'));
+    const n = slides.length;
+    let target = 0, pos = 0, raf = 0;
+    let dragging = false, startX = 0, startTarget = 0, moved = 0;
+
+    slides.forEach((_, i) => {
+      const d = document.createElement('button');
+      d.className = 's-dot' + (i === 0 ? ' on' : '');
+      d.setAttribute('role', 'tab');
+      d.setAttribute('aria-label', 'Go to story ' + (i + 1));
+      d.addEventListener('click', () => { target = i; kick(); });
+      dotsBox.appendChild(d);
+    });
+    const dots = Array.from(dotsBox.children);
+
+    function metrics() {
+      const w = slides[0].getBoundingClientRect().width;
+      const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 0;
+      return { step: w + gap, center: viewport.clientWidth / 2 - w / 2 };
+    }
+    function render() {
+      pos += (target - pos) * (reduce ? 1 : 0.085);
+      if (Math.abs(target - pos) < 0.0004) pos = target;
+      const { step, center } = metrics();
+      track.style.transform = `translate3d(${(center - pos * step).toFixed(2)}px,0,0)`;
+      slides.forEach((s, i) => {
+        const dist = Math.abs(pos - i);
+        const t = Math.min(dist, 1.6);
+        s.classList.toggle('is-active', dist < 0.5);
+        s.classList.toggle('is-dim', dist >= 0.5);
+        s.style.setProperty('--dist', dist.toFixed(3));
+        const inner = s.querySelector('.s-left');
+        if (inner && !reduce) inner.style.translate = `${(-(pos - i) * 26).toFixed(2)}px 0px`;
+        s.style.opacity = (1 - t * 0.28).toFixed(3);
+      });
+      const active = Math.round(pos);
+      dots.forEach((d, j) => d.classList.toggle('on', j === active));
+      if (pos !== target || dragging) raf = requestAnimationFrame(render);
+      else raf = 0;
+    }
+    function kick() { if (!raf) raf = requestAnimationFrame(render); }
+    function clampTarget(v) { target = Math.min(n - 1, Math.max(0, v)); }
+
+    // Cursor drag
+    viewport.addEventListener('pointerdown', (e) => {
+      dragging = true; moved = 0; startX = e.clientX; startTarget = target;
+      viewport.classList.add('is-drag'); viewport.setPointerCapture(e.pointerId); kick();
+    });
+    viewport.addEventListener('pointermove', (e) => {
+      if (!dragging) return;
+      const dx = e.clientX - startX;
+      moved = Math.max(moved, Math.abs(dx));
+      const { step } = metrics();
+      clampTarget(startTarget - dx / Math.max(step, 1)); kick();
+    });
+    function endDrag() {
+      if (!dragging) return;
+      dragging = false; viewport.classList.remove('is-drag');
+      clampTarget(Math.round(target)); kick();
+    }
+    viewport.addEventListener('pointerup', endDrag);
+    viewport.addEventListener('pointercancel', endDrag);
+    viewport.addEventListener('click', (e) => { if (moved > 8) { e.preventDefault(); e.stopPropagation(); } }, true);
+
+    // Gentle cursor nudge (hover, no buttons pressed): shifts glide slightly
+    if (!reduce) {
+      viewport.addEventListener('mousemove', (e) => {
+        if (dragging || e.buttons) return;
+        const r = viewport.getBoundingClientRect();
+        const nx = (e.clientX - r.left) / r.width - 0.5;
+        const { step } = metrics();
+        const base = metrics().center - Math.round(pos) * step;
+        track.style.marginLeft = (nx * -14).toFixed(2) + 'px';
+        void base;
+      }, { passive: true });
+      viewport.addEventListener('mouseleave', () => { track.style.marginLeft = '0px'; });
+    }
+
+    // Hover focus: hovered card lifts, siblings recede
+    slides.forEach((s) => {
+      s.addEventListener('mouseenter', () => { track.classList.add('is-focus'); s.classList.add('is-hover'); });
+      s.addEventListener('mouseleave', () => { track.classList.remove('is-focus'); s.classList.remove('is-hover'); });
+    });
+
+    window.addEventListener('resize', kick);
+    kick();
+  })();
+})();
+</script>
+</body>
+</html>
